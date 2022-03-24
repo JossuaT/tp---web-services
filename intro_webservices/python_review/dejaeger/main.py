@@ -1,5 +1,6 @@
 # Solution
 import json
+import pandas as pd
 
 # Step 1 Read JSON file
 with open("../data.json", "r") as file:
@@ -20,4 +21,8 @@ for people in data:
     }
     clean_data.append(people_data)
 
-print(clean_data)
+# Step 4 Make a dataframe out of the python object (list<dict>)
+df = pd.DataFrame(clean_data)
+
+# Step 5 Display of the DF
+print(df.head())
