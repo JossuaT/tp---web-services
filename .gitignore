@@ -128,3 +128,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .idea/
+
+# Document used for demo
+demo.py
+app.py
